@@ -1,0 +1,71 @@
+body{
+    background-color: #f8f8f8;
+}
+.tablediv{
+   margin-top: 5%;
+}
+.table {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 8px;
+    color: #505151;
+}
+
+.table th {
+    background-color: #174869;
+    color: white;
+    text-align: center;
+}
+
+.table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+.pagebtn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #174869;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(23, 72, 105, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagebtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.pagebtn span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: #f8f8f8;
+}
+
+.pagebtn:hover:not(:disabled) {
+    background-color: #f8f8f8;
+    color: #174869;
+}
+.pagebtn:hover:not(:disabled) span {
+    color: #174869;
+}
